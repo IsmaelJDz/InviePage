@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/invie.css">
 </head>
 <body>
-	<header id="header" class="header">
+	<header id="header" class="header contenedor">
 		<figure class="logotipo">
 			<img src="img/invie2x.png" width="186" height="60" alt="Invie Logotipo"/>
 		</figure>
@@ -20,34 +20,41 @@
 		</nav>
 	</header>
 	<section id="portada" class="portada">
-		<!-- titulo -->
-		<h1 class="titulo">Guitarras invisibles</h1>
-		<!-- resumen -->
-		<h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3>
-		<!-- boton -->
-		<button>conoce más</button>
+		<div class="contenedor">
+			<!-- titulo -->
+			<h1 class="titulo">Guitarras invisibles</h1>
+			<!-- resumen -->
+			<h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3>
+			<!-- boton -->
+			<button>conoce más</button>
+		</div>
 	</section>
-	<section id="guitarras" class="guitarras">
+	<section id="guitarras" class="guitarras contenedor">
 		<h2>Nustras guitarras</h2>
 		<!-- guitarra 1 -->
 		<article class="guitarra">
-			<img src="img/invie-acustica.png" width="200" alt="Guitarra Invie Acustica">
-			<h3 class="title-b">Invie Acústica</h3>
-			<ol>
-				<li>Estilo vintage</li>
-				<li>Madera pura</li>
-				<li>Incluye estuche invisible de aluminio</li>
-			</ol>
+			<img class="right" src="img/invie-acustica.png" width="350" alt="Guitarra Invie Acustica">
+			<div class="container-guittar-a">
+				
+				<h3 class="title-b">Invie Acústica</h3>
+				<ol>
+					<li>Estilo vintage</li>
+					<li>Madera pura</li>
+					<li>Incluye estuche invisible de aluminio</li>
+				</ol>
+			</div>
 		</article>
 		<!-- guitarra 2 -->
 		<article class="guitarra">
-			<img src="img/invie-classic.png" width="200" alt="Guitarra Invie Classic">
-			<h3 class="title-b">Invie Acústica</h3>
-			<ol>
-				<li>Estilo vintage</li>
-				<li>Madera pura</li>
-				<li>Incluye estuche invisible de aluminio</li>
-			</ol>
+			<img class="left" src="img/invie-classic.png" width="350" alt="Guitarra Invie Classic">
+			<div class="container-guittar-b">
+				<h3 class="title-b">Invie Acústica</h3>
+				<ol>
+					<li>Estilo vintage</li>
+					<li>Madera pura</li>
+					<li>Incluye estuche invisible de aluminio</li>
+				</ol>
+			</div>
 		</article>
 	</section>
 </body>
