@@ -10,12 +10,55 @@ body {
 	margin: 0;
 }
 
+input, textarea {
+	outline: 0;
+}
+
+input:focus, textarea:focus {
+	background: lightgray;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	background: #273b47;
+	color: white;
+	padding: 10px 20px;
+	text-align: left;
+}
+
+td {
+	padding: 20px;
+}
+
+table, td, th {
+	border: 1px solid #273b47;
+	border-collapse: collapse;
+}
+
+.contenedor {
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+.background {
+	background-image: url('../img/background.png');
+	background-size: cover;
+}
+
 .button {
 	border-radius: 8px;
 	background: #fd324e;
 	color: white;
+	cursor: pointer;
 	border: none;
-	padding: 7px;
+	padding: 10px;
+	text-decoration: none;
+	font-size: 18px;
+	background: linear-gradient(to left, #fe344e, #ff7250);
 }
 
 .titulo {
@@ -23,6 +66,10 @@ body {
 	font-size: 70px;
 	margin-bottom: 0;
 	margin-top: 70px;
+}
+
+.titulo span {
+	text-decoration: underline;
 }
 
 .title-a {
@@ -37,6 +84,7 @@ body {
 
 .guitarras {
 	color: #1F313C;
+	margin-bottom: 60px;
 }
 
 .guitarras h2 {
@@ -45,9 +93,9 @@ body {
 }
 
 .portada {
-	background-image: url('../img/background.png');
 	color: white;
 	padding: 20px;
+	height: 500px;
 }
 
 .pordata button {
@@ -70,16 +118,17 @@ body {
 	content: '∘';
 	font-size: 50px;
 	line-height: 20px;
-	color: blue;
+	color: white;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
 }
 
 .logotipo {
 	display: inline-block;
-}
-
-.contenedor {
-	width: 800px;
-	margin: auto;
+	margin-left: 0;
 }
 
 .right {
@@ -91,11 +140,10 @@ body {
 .left {
 	float: left;
 	position: relative;
-	top: 80px;
 }
 
 .guitarra {
-	margin: 10px;
+	margin: 10px 10px 40px 10px;
 	padding: 10px;
 	/*overflow: hidden;*/
 	border: 1px solid #1F313C;
@@ -107,13 +155,18 @@ body {
 	padding: 0;
 }
 
+.guitarra.b {
+	height: 190px;
+} 
+
 .container-guittar-a {
 	padding-left: 20px;
 }
 
 .container-guittar-b {
 	margin-left: 370px;
-	padding-left:
+	position: relative;
+	bottom: 90px;
 }
 
 .header {
@@ -122,6 +175,7 @@ body {
 
 .footer {
 	background-color: #273b47;
+	padding: 50px 10px;
 }
 
 .contact {
@@ -153,7 +207,6 @@ body {
 	display: flex;
 	width: 400px;
 	color: white;
-	padding: 50px 10px;
 }
 
 .col1, .col2 {
@@ -169,6 +222,10 @@ body {
 	align-items: flex-start;
 }
 
+.col2 .button {
+	margin-top: 15px;
+}
+
 .intereses label {
 	font-size: 12px;
 }
@@ -181,22 +238,6 @@ body {
 	margin-top: 10px;
 }
 
-table {
-	width: 100%;
-}
-
-th {
-	background: #273b47;
-	color: white;
-	padding: 10px 20px;
-	text-align: left;
-}
-
-td {
-	padding: 20px;
-}
-
-table, td, th {
-	border: 1px solid #273b47;
-	border-collapse: collapse;
+.tabla {
+	margin: 50px 0;
 }
