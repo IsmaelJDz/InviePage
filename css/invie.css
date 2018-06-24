@@ -294,6 +294,7 @@ table, td, th {
 	display: inline-block;
 	text-align: center;
 	cursor: pointer;
+    color: white;
 	position: absolute;
 	top: 20px;
 	left: 20px;
@@ -305,6 +306,16 @@ table, td, th {
 		  width: auto;
 		  max-width: 800px;
 	  }*/
+
+      /* Precios */
+      .tabla {
+          margin: 50px 20px;
+      }
+
+      .tabla .contenedor {
+          overflow: auto;
+          border: 1px solid #273b47;
+      }
 
 	  /*Portada*/
 
@@ -420,6 +431,12 @@ table, td, th {
 	.portada .contenedor {
 		position: static;
 	}
+    .header {
+        position: static;
+    }
+    .header .contenedor {
+        position: static;
+    }
 	.menu {
 		background: rgba(255, 60, 88, 0.8);
 		position: absolute;
