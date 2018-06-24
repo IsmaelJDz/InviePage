@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/invie.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
-<body>
+<body class="precios">
 	<header id="header" class="header background">
 		<div class="contenedor">
 			<figure class="logotipo">
@@ -113,20 +113,36 @@
 		function mediaQuery(){
 			if (query.matches) {
 				console.log('se cumplio la condicon');
-				$burguerButton.addEventListener('touchstart', addMenuOffCanvas )
+				$burguerButton.addEventListener('click', showMenu )
 
 			}
 			else{
 				console.log('no se cumplio la condicon');
-				$burguerButton.removeEventListener('touchstart', addMenuOffCanvas )
+				$burguerButton.removeEventListener('touchstart', showMenu )
 			}
 		}
 
 		let $burguerButton = document.getElementById('burguer-button');
 		let $menu = document.getElementById('menu');
-		function addMenuOffCanvas() {
-			$menu.classList.toggle('active');
-			$burguerButton.classList.toggle('icon-close');
+		// function addMenuOffCanvas() {
+		// 	$menu.classList.toggle('active');
+		// 	//$burguerButton.classList.toggle('icon-close');
+		// }
+		let conta = false;
+		function showMenu () {
+
+			if (conta == false) {
+				$menu.classList.add('active');
+				conta = true;
+			}
+			else {
+				conta = false;
+				$menu.classList.remove('active');
+			}
+
+		}
+		function hideMenu () {
+			$menu.classList.remove('active');
 		}
 		mediaQuery();
 
@@ -134,6 +150,13 @@
 		var bLazy = new Blazy({
 			selector: 'img'
 		});
+
+		//Gestos touch
+		const $body = document.body;
+		var hammertime = new Hammer($body);
+		hammertime.on('swipeleft', hideMenu);
+		hammertime.on('swiperight', showMenu);
+
 
 	</script>
 </body>

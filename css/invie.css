@@ -295,10 +295,23 @@ table, td, th {
 	text-align: center;
 	cursor: pointer;
     color: white;
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	left: 20px;
 	z-index: 3;
+    display: none;
+}
+
+.video-demo {
+    max-width: 500px;
+    width: 100%;
+    border: 5px solid #3c5b6e;
+}
+
+.video-demo-contenedor {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
 }
 
 @media screen and (max-width: 800px) {
@@ -335,6 +348,10 @@ table, td, th {
 	  }
 
 	  /*guitarras*/
+      .video-demo-contenedor {
+          margin-bottom: 30px;
+      }
+
 	  .guitarras{
 		  text-align: center;
 	  }
@@ -423,11 +440,25 @@ table, td, th {
 		padding: 0;
 	}
 
+    /* guitarras */
+    /*.video-demo {
+        margin: 0 10px;
+    }*/
+
 }
 
 @media screen and (max-width: 500px) {
 
 	/* Portada */
+    .portada .button {
+        display: block;
+    }
+    .precios .header .logotipo {
+        margin: 50px 0;
+    }
+    .burguer-button {
+        display: block;
+    }
 	.portada .contenedor {
 		position: static;
 	}
@@ -439,7 +470,7 @@ table, td, th {
     }
 	.menu {
 		background: rgba(255, 60, 88, 0.8);
-		position: absolute;
+		position: fixed;
 		left: -100%;
 		top: 0;
 		z-index: 2;
@@ -496,6 +527,15 @@ table, td, th {
 	.title-b {
 		font-size: 30px;
 	}
+
+    .video-demo-contenedor {
+        margin: 0 20px 20px 10px;
+    }
+
+    /* footer */
+    .col2 {
+        align-items: stretch;
+    }
 
 }
 
